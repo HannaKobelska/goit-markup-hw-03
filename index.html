@@ -17,32 +17,27 @@
 <body>
 
     <!-- Шапка сайта -->
-    <header>
-       <div class="container">
-           <div class="header-set">
-                <div class="logo-set-div">
+    <header class="header">
+       <div class="container header-set">
+        
+                <nav class="nav-set">
                     <a href="" lang="en" class="logo"> <span class="part-1">Web</span><span class="part-2">Studio</span> </a>
-                </div>  
-                <div>
-                    <nav>
-                        <ul class="site-nav list">
-                            <li><a href="" class="link current">Студия</a></li>
-                            <li><a href="./portfolio.html" class="link">Портфолио</a></li>
-                            <li><a href="" class="link last">Контакты</a></li>
-                        </ul>
-                    </nav> 
-                </div>
-                <div class="nav-contacts-set-div">
-                    <ul class="nav-contacts nav-contacts-set">
-                        <li class="item">
-                            <a href="mailto:info@devstudio.com" class="nav-contacts">info@devstudio.com</a>
-                        </li>
-                        <li class="item">
-                            <a href="tel:+380961111111" class="nav-contacts">+38 096 111 11 11</a>
-                        </li>
+                    <ul class="site-nav list">
+                        <li><a href="" class="link current">Студия</a></li>
+                        <li><a href="./portfolio.html" class="link">Портфолио</a></li>
+                        <li><a href="" class="link last">Контакты</a></li>
                     </ul>
-                </div>
-            </div>
+                </nav> 
+                
+                <ul class="nav-contacts">
+                    <li class="item">
+                        <a href="mailto:info@devstudio.com" class="nav-contacts">info@devstudio.com</a>
+                    </li>
+                    <li class="item">
+                        <a href="tel:+380961111111" class="nav-contacts">+38 096 111 11 11</a>
+                    </li>
+                </ul>
+                
        </div>
     </header>
 
@@ -105,23 +100,31 @@
                 <ul class="list team-set">
                     <li class="team-member">
                         <img src="./images/igor.jpg" alt="Фото Игорь Демьяненко" width="270">
-                        <h3 class="team-member-name">Игорь Демьяненко</h3>
-                        <p lang="en" class="team-member-job"> Product Designer </p>
+                        <div class="team-card">
+                            <h3 class="team-member-name">Игорь Демьяненко</h3>
+                            <p lang="en" class="team-member-job"> Product Designer </p>
+                        </div>
                     </li>
                     <li class="team-member">
                         <img src="./images/olga.jpg" alt="Фото Ольга Репина" width="270">
-                        <h3 class="team-member-name">Ольга Репина</h3>
-                        <p lang="en" class="team-member-job"> Frontend Developer </p>
+                        <div class="team-card">
+                            <h3 class="team-member-name">Ольга Репина</h3>
+                            <p lang="en" class="team-member-job"> Frontend Developer </p>
+                        </div>
                     </li>
                     <li class="team-member">
                         <img src="./images/nikolay.jpg" alt="Фото Николай Тарасов" width="270">
-                        <h3 class="team-member-name">Николай Тарасов</h3>
-                        <p lang="en" class="team-member-job"> Marketing </p>
+                        <div class="team-card">
+                            <h3 class="team-member-name">Николай Тарасов</h3>
+                            <p lang="en" class="team-member-job"> Marketing </p>
+                        </div>
                     </li>
                     <li class="team-member">
                         <img src="./images/mihail.jpg" alt="Фото Михаил Ермаков" width="270">
-                        <h3 class="team-member-name">Михаил Ермаков</h3>
-                        <p lang="en" class="team-member-job"> UI Designer </p>
+                        <div class="team-card">
+                            <h3 class="team-member-name">Михаил Ермаков</h3>
+                            <p lang="en" class="team-member-job"> UI Designer </p>
+                        </div>
                     </li>
                 </ul>
            </div>
@@ -132,7 +135,7 @@
     <footer class="footer">
      <div class="container">
             <a href="" lang="en" class="logo"> <span class="part-1">Web</span><span class="part-3">Studio</span> </a>
-            <address>
+            <address class="footer-address">
                 <ul class="list footer-set">
                     <li class="footer-set-item"><a href="" class="footer-address">г. Киев, пр-т Леси Украинки, 26</a></li>
                     <li class="footer-set-item"><a href="mailto:info@devstudio.com" class="footer-item">info@devstudio.com</a></li>

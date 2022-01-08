@@ -29,7 +29,6 @@ body {
   color: var(--main-text-color);
   font-size: 14px;
   letter-spacing: 0.03em;
-   width: 1600px;
 }
 
 h1,
@@ -55,7 +54,7 @@ img {
 
 .container {
   /* outline: 2px solid tomato; */
-  width: 1230px;
+  width: 1200px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
@@ -64,6 +63,10 @@ img {
 
 /* Шапка сайта */
 /* WebStudio */
+
+.header {
+  border-bottom: 1px solid #ECECEC;
+}
 
 .logo {
   font-family: Raleway, sans-serif;
@@ -97,7 +100,6 @@ img {
   margin-right: 50px;
 }
 
-
 .link.last {
   margin-right: 0;
 }
@@ -117,6 +119,12 @@ img {
   list-style: none;
   text-decoration: none;
   color: var(--main-text-color);
+
+  display: flex;
+  padding: 0;
+  justify-content: space-between;
+
+   margin-left: auto;
 }
 
 .nav-contacts:hover,
@@ -129,6 +137,7 @@ img {
   display: flex;
   justify-content: center;
   padding: 0;
+  margin-left: 93px;
 }
 
 .header-set {
@@ -138,19 +147,9 @@ img {
   align-items: center;
 }
 
-.nav-contacts-set {
-  /* outline: 1px solid teal; */
+.nav-set {
   display: flex;
-  padding: 0;
-  justify-content: space-between;
-}
-
-.nav-contacts-set-div {
-  margin-left: auto;
-}
-
-.logo-set-div {
-  margin-right: 93px;
+  align-items: center;
 }
 
 .nav-contacts .item + .item {
@@ -161,7 +160,8 @@ img {
 
 .hero {
   background-color: var(--hero-background-color);
-  padding-bottom: 260px;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .hero-title {
@@ -172,7 +172,6 @@ img {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--primary-white-color);
-  padding-top: 140px;
 }
 
 .button.primary {
@@ -217,7 +216,9 @@ img {
   color: var(--main-text-color);
 }
 
-.advances {
+.advances,
+.work,
+.team {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -248,10 +249,6 @@ img {
   margin-bottom: 50px;
 }
 
-.work {
-  padding-bottom: 94px;
-}
-
 .works-set {
   /* outline: 1px solid teal; */
   display: flex;
@@ -271,8 +268,6 @@ img {
 
 .team {
   background-color: var(--team-background-color);
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
 
 .team-title {
@@ -290,7 +285,6 @@ img {
   line-height: 1.19;
   text-align: center;
   color: var(--title-text-color);
-  margin-top: 30px;
 }
 
 .team-member-job {
@@ -300,7 +294,11 @@ img {
   text-align: center;
   color: var(--main-text-color);
   margin-top: 10px;
-  margin-bottom: 30px;
+}
+
+.team-card {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .team-set {
@@ -336,9 +334,8 @@ img {
 
 .footer .list {
   padding-left: 0;
-  margin-top: 20px;
+  margin: 0;
 }
-
 
 .footer-set {
   /* outline: 1px solid teal; */
@@ -348,13 +345,16 @@ img {
   margin-top: calc(-1 * 9px);
 }
 
-.footer-set-item {
-  margin-left: 9px;
-  margin-top: 9px
+.footer-set-item:not(:first-child)  {
+  margin-top: 9px;
 }
 
 .logo .part-3 {
   color: var(--primary-white-color);
+}
+
+.footer-address {
+  margin-top: 20px;
 }
 
 .footer-address {
@@ -385,7 +385,7 @@ img {
   background-color: var(--primary-white-color);
   padding-top: 94px;
   padding-bottom: 94px;
-  border-top: 1px solid rgba(236, 236, 236, 1);
+
 }
 
 .filter {
@@ -438,7 +438,7 @@ img {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--title-text-color);
-  margin: 20px 24px 4px 24px;
+  margin-bottom: 4px;
 }
 
 .project-type {
@@ -446,7 +446,13 @@ img {
   font-size: 16px;
   line-height: 1.9;
   color: var(--main-text-color);
-  margin: 4px 24px 20px 24px;
+}
+
+.projects-card {
+  padding: 20px 24px 20px 24px;
+  border-right: 1px solid #EEEEEE;
+  border-left: 1px solid #EEEEEE;
+  border-bottom: 1px solid #EEEEEE;
 }
 
 .projects-set {
@@ -465,6 +471,6 @@ img {
   flex-basis: calc(100% / 3 - var(--card-set-gap));
   margin-left: var(--card-set-gap);
   margin-top: var(--card-set-gap);
-  border: 1px solid #EEEEEE;
+ 
 
 }
